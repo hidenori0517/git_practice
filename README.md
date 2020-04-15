@@ -1,0 +1,31 @@
+- ユーザー設定
+ - git config --global user.name 'ユーザ名'
+  - ターミナルで最初に行う初期設定’’の中にユーザ名を入力する
+ - git config --global user.email メールアドレス
+  - ターミナルで最初に行う初期設定''の中にメールアドレスを入力する
+
+- リポジトリ作成 
+ - cd ~/使用するプロジェクトのフォルダ
+  - リポジトリを作成するディレクトリに移動
+ - touch README.md 
+  - README.md 
+ - git init
+  - リポジトリ作成
+ - git add README.md
+  - README.mdファイルをローカル上のステージングエリアに上げる
+
+- ローカルリポジトリにコミット
+ - コミット
+  - git add .
+   - ステージングエリアへ登録
+  - git commit -m “first commit”
+   - ローカルリポジトリへコミット
+ - 確認
+  - git log
+   - コミットしたログの確認を行なえる
+
+- GitHubにプッシュ
+ - git remote add origin プッシュするURL
+  - URL指定
+ - git push -u origin master
+  - プッシュ
